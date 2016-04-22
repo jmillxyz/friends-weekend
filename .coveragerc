@@ -1,0 +1,5 @@
+[run]
+include = friends_weekend/*
+omit = *migrations*, *tests*
+plugins =
+    django_coverage_plugin

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Flights</h2>
+<a href="{% url 'flights:add' %}">Are you flying in? Add your flight!</a>
+
+{% for flight in flight_list %}
+    <li><a href="{% url 'flights:detail' flight.number %}">{{ flight.number }}</a></li>
+{% endfor %}
+
+{% endblock %}
